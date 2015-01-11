@@ -1,0 +1,24 @@
+<html>
+<head><title>{{ title }}</title></head>
+<body>
+<h1> {{ header }} </h1>
+<a href=".">home</a>
+<hr>
+<br>
+<form action="modingredient" method="post">
+<input type="hidden" name="ingredient" value="{{ingr|e}} {{unit|e}}">
+Ingredient<br>
+<input type="text" name="new_ingredient" value="{{ ingr|e }}">
+<br>
+Unit (liters, kg)<br>
+<input type="text" name="new_unit" value="{{ unit|e }}">
+<br>
+Quantity<br>
+<input type="text" name="new_quantity" value="{{ qty|e }}">
+<br>
+<br>
+<input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

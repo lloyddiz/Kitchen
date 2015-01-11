@@ -1,0 +1,14 @@
+Sun Jan 11 16:43:02 CET 2015, Lloyd Dizon
+
+Kitchen manager: a tool for keeping track of ingredients in kitchen
+
+Requires:
+python2
+python-jinja2
+python-cherrypy3
+redis
+
+To install requirements run for example: 
+apt-get install python2 python-jinja2 python-cherrypy3 redis 
+
+Database: default database 0 on Redis is used

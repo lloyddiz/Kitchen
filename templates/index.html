@@ -1,0 +1,22 @@
+<html>
+<head><title>{{ title }}</title></head>
+<body>
+<h1> {{ header }} </h1>
+<a href="add">Add an ingredient</a>
+<hr>
+<table>
+   <tr>
+      <th>Ingredient (unit)</th>
+      <th>Quantity</th>
+      <th><br></th>
+   </tr>
+   {% for key, value in ingredients.iteritems() %}
+   <tr>
+      <td><a href="mod?ingredient={{ key|e }}">{{ key|e }}</a></td>
+      <td><a href="mod?ingredient={{ key|e }}">{{ value|e }}</a></td>
+      <td><a href="remove?ingredient={{ key|e }}">delete</a></td>
+   </tr>
+   {% endfor %}
+</table>
+</body>
+</html>
